@@ -1,3 +1,2 @@
-# React Wizard Component
-
-React Wizard Component
+# react-payments
+React Payment component
