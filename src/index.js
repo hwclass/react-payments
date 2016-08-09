@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const paymentStyles = {
+const css = {
   label: {
     fontSize: 15,
     fontFamily: 'Helvetica'
@@ -129,19 +129,19 @@ export default class Payments extends Component {
       <section id="payments">
         <h3>Payments</h3>
         <div class="block">
-          <Name value={this.props.name} default={this.state.defaults.name.value} style={{label: paymentStyles.label, input: paymentStyles.input}}/>
+          <Name value={this.props.name} default={this.state.defaults.name.value} style={{label: css.label, input: css.input}}/>
         </div>
         <div class="block">
-          <Surname value={this.props.surname} default={this.state.defaults.surname.value} style={{label: paymentStyles.label, input: paymentStyles.input}}/>
+          <Surname value={this.props.surname} default={this.state.defaults.surname.value} style={{label: css.label, input: css.input}}/>
         </div>
         <div class="block">
-          <CardNumber value={this.props.cardNumber} default={this.state.defaults.surname.value} style={{label: paymentStyles.label, input: paymentStyles.input}}/>
+          <CardNumber value={this.props.cardNumber} default={this.state.defaults.surname.value} style={{label: css.label, input: css.input}}/>
         </div>
         <div class="block">
-          <Expiration value={this.props.expiration} default={this.state.defaults.expiration.value} style={{label: paymentStyles.label, input: paymentStyles.input}}/>
+          <Expiration value={this.props.expiration} default={this.state.defaults.expiration.value} style={{label: css.label, input: css.input}}/>
         </div>
         <div class="block">
-          <CVC value={this.props.cvc} default={this.state.defaults.cvc.value} style={{label: paymentStyles.label, input: paymentStyles.input}}/>
+          <CVC value={this.props.cvc} default={this.state.defaults.cvc.value} style={{label: css.label, input: css.input}}/>
         </div>
         <div class="block">
           <PurchaseButton/>
