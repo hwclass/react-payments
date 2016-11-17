@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
 
+import Name from './components/Name';
+import Surname from './components/Surname';
+import CardNumber from './components/CardNumber';
+import Expiration from './components/Expiration';
+import CVC from './components/CVC';
+import PurchaseButton from './components/PurchaseButton';
+
 const css = {
   label: {
     fontSize: 15,
@@ -18,88 +25,6 @@ const css = {
     padding: '3px 10px',
   }
 };
-
-export class Name extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return(
-      <label style={this.props.style.label}>
-        Name:
-        <input type="text" id="name" value={(this.props.value!==''?this.props.value:this.props.default)} style={this.props.style.input}></input>
-      </label>
-    )
-  }
-};
-
-export class Surname extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return(
-      <label style={this.props.style.label}>
-        Surname:
-        <input type="text" id="surname" value={(this.props.value!==''?this.props.value:this.props.default)} style={this.props.style.input}></input>
-      </label>
-    )
-  }
-}
-
-export class CardNumber extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return(
-      <label style={this.props.style.label}>
-        Card Number:
-        <input type="text" id="card-number" value={(this.props.value!==''?this.props.value:this.props.default)} style={this.props.style.input}></input>
-      </label>
-    )
-  }
-}
-
-export class Expiration extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return(
-      <label style={this.props.style.label}>
-        Expiration:
-        <input type="text" id="expiration" value={(this.props.value!==''?this.props.value:this.props.default)} style={this.props.style.input}></input>
-      </label>
-    )
-  }
-}
-
-export class CVC extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return(
-      <label style={this.props.style.label}>
-        CVC:
-        <input type="text" id="cvc" value={(this.props.value!==''?this.props.value:this.props.default)} style={this.props.style.input}></input>
-      </label>
-    )
-  }
-}
-
-export class PurchaseButton extends Component {
-  constructor(props) {
-    super(props);
-  }
-  onClick() {
-    console.log('clicked the purchase button...');
-  }
-  render() {
-    return(<button style={this.props.style} onClick={this.props.onClick}>Purchase</button>)
-  }
-}
 
 export default class Payments extends Component {
   constructor(props) {
