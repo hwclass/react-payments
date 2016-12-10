@@ -1,5 +1,5 @@
 # react-payments
-This React component wrapping the native HTML5 (Payments API)[https://www.w3.org/Payments/].
+This React component wrapping the native HTML5 [Payments API](https://www.w3.org/Payments/).
 
 ###Usage
 ```javascript
